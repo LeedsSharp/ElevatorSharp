@@ -115,6 +115,16 @@ var createEditor = function() {
         cm.focus();
     });
 
+    $("#language")
+        .change(function() {
+            if ($(this).find("option:selected").val() === "csharp" &&
+                sm.getValue() === $("#fsharp").val())
+                sm.setValue($("#csharp").val());
+            else if ($(this).find("option:selected").val() === "fsharp" &&
+                sm.getValue() === $("#csharp").val())
+                sm.setValue($("#fsharp").val());
+        });
+
     var returnObj = riot.observable({});
     var autoSaver = _.debounce(saveCode, 1000);
     cm.on("change", function() {

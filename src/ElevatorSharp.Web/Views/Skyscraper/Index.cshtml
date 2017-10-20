@@ -29,6 +29,22 @@
         <textarea name="Code" id="code"></textarea>
     </div>
     <form action="@Url.Action("UploadPlayerAsCode")" method="post">
+        <input type="hidden" id="csharp" name="csharp" value="@ViewBag.CSharpSource"/>
+        <input type="hidden" id="fsharp" name="csharp" value="@ViewBag.FSharpSource" />
+        <div>
+            <span style="float: left; margin-right: 10px">Select language: </span>
+            <select name="language" id="language">
+                @if (ViewBag.Language == "fsharp")
+                {
+                    <option value="csharp">C#</option>
+                    <option value="fsharp" selected>F#</option>}
+                else
+                {
+                    <option value="csharp" selected>C#</option>
+                    <option value="fsharp">F#</option>
+                }
+            </select>
+        </div>
         @ViewBag.Message
         <ul>
             @foreach (var diagnostic in ViewBag.Diagnostics)

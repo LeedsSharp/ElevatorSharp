@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSharp.Tests", "ElevatorSharp.Tests\ElevatorSharp.Tests.csproj", "{3B05D2CE-19DC-4869-AB86-43D82A64C031}"
 EndProject
@@ -23,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSharp.Web", "ElevatorSharp.Web\ElevatorSharp.Web.csproj", "{1A6A5149-4454-44AD-AF33-B624CDEABF91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSharp.Game", "ElevatorSharp.Game\ElevatorSharp.Game.csproj", "{F1C75963-C7ED-4D6E-BBBC-0E8F75B51364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSharp.Compilers", "ElevatorSharp.Compilers\ElevatorSharp.Compilers.csproj", "{D78BB877-F4EA-4F28-BE15-07B5DACC25E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{F1C75963-C7ED-4D6E-BBBC-0E8F75B51364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C75963-C7ED-4D6E-BBBC-0E8F75B51364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C75963-C7ED-4D6E-BBBC-0E8F75B51364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78BB877-F4EA-4F28-BE15-07B5DACC25E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78BB877-F4EA-4F28-BE15-07B5DACC25E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78BB877-F4EA-4F28-BE15-07B5DACC25E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78BB877-F4EA-4F28-BE15-07B5DACC25E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

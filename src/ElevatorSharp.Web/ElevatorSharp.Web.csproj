@@ -47,6 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CodeAnalysis, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.2.0-rc\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
@@ -309,6 +310,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ElevatorSharp.Compilers\ElevatorSharp.Compilers.csproj">
+      <Project>{d78bb877-f4ea-4f28-be15-07b5dacc25e8}</Project>
+      <Name>ElevatorSharp.Compilers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ElevatorSharp.Domain\ElevatorSharp.Domain.csproj">
       <Project>{88937ac7-ed0e-4561-9163-16ea481b921e}</Project>
       <Name>ElevatorSharp.Domain</Name>
